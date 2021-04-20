@@ -1,0 +1,2 @@
+echo '<HTML><BODY><P>Parabens!. O certificado foi instalado com
+sucesso.</P></BODY></HTML>'> /var/www/index.html
