@@ -91,11 +91,11 @@ root /var/www;
 <br><br>
 
 sudo service nginx restart <br>
-
+"<<<>>>>''''////...
 sudo su <br>
 echo '<HTML><BODY><P>Parabens!. O certificado foi instalado com <br>
 sucesso.</P></BODY></HTML>'> /var/www/index.html <br>
-
+"
 
 
 
