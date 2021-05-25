@@ -4,9 +4,23 @@
   
 sudo apt-get install iptables
   
-  sudo apt-get install --reinstall bcmwl-kernel-source
+sudo apt update
   
-  sudo apt-get update bcmwl-kernel-source
+sudo apt install build-essential git dkms
+  
+git clone https://github.com/tomaspinho/rtl8821...
+  
+cd rtl8821ce
+  
+sudo ./dkms-install.sh
+  
+sudo modprobe 8821ce
+  
+reboot
+  
+  -----------------------------
+  -----------------------------
+  -----------------------------
   
 comando→ sudo su <br>
 comando→ apt-get install -y apache2 telnetd nmap curl
