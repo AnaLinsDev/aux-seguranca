@@ -1,4 +1,7 @@
 <h2>
+  
+ hostname -I
+  
 comando→ sudo su
 comando→ apt-get install –y apache2 telnetd nmap curl
 
