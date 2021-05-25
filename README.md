@@ -2,6 +2,8 @@
   
  hostname -I
   
+sudo apt-get install iptables
+  
 comando→ sudo su <br>
 comando→ apt-get install –y apache2 telnetd nmap curl
 
