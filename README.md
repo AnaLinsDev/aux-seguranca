@@ -2,10 +2,10 @@
   
  hostname -I
   
-comando→ sudo su
+comando→ sudo su <br>
 comando→ apt-get install –y apache2 telnetd nmap curl
 
-comando→ iptables –F INPUT
+comando→ iptables –F INPUT <br>
 comando→ iptables –A INPUT –p all –j ACCEPT
 
 comando→ iptables –L –n –-line-numbers
