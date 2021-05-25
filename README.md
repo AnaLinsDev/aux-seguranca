@@ -4,19 +4,23 @@
   
 sudo apt-get install iptables
   
+  sudo apt-get install --reinstall bcmwl-kernel-source
+  
+  sudo apt-get update bcmwl-kernel-source
+  
 comando→ sudo su <br>
-comando→ apt-get install –y apache2 telnetd nmap curl
+comando→ apt-get install -y apache2 telnetd nmap curl
 
-comando→ iptables –F INPUT <br>
-comando→ iptables –A INPUT –p all –j ACCEPT
+comando→ iptables -F INPUT <br>
+comando→ iptables -A INPUT -p all -j ACCEPT
 
-comando→ iptables –L –n –-line-numbers
+comando→ iptables -L -n --line-numbers
 
 curl http://IP_HOST_A
 
-comando→ iptables –I INPUT 1 –p tcp --dport 80 –j REJECT
+comando→ iptables -I INPUT 1 -p tcp --dport 80 -j REJECT
 
-comando→ iptables –L –n -–line-numbers
+comando→ iptables -L -n --line-numbers
 
 curl http://IP_HOST_A
 
@@ -25,29 +29,29 @@ comando→ telnet IP_HOST_A
 senha: ****
 exit
 
-comando→ iptables –I INPUT 1 –p tcp --dport 23 –j REJECT
+comando→ iptables -I INPUT 1 -p tcp --dport 23 -j REJECT
 
-comando→ iptables –L –n -–line-numbers
+comando→ iptables -L -n --line-numbers
 
 comando→ ping IP_HOST_A
 
-comando→ iptables –I INPUT 1 –p icmp –j REJECT
+comando→ iptables -I INPUT 1 -p icmp -j REJECT
 
-comando→ iptables –L –n -–line-numbers
+comando→ iptables -L -n --line-numbers
 
-comando→ iptables –D INPUT 1
+comando→ iptables -D INPUT 1
 
-comando→ iptables –I INPUT 1 –p icmp –j DROP
+comando→ iptables -I INPUT 1 -p icmp -j DROP
 
-comando→ iptables –L –n –-line-numbers
+comando→ iptables -L -n --line-numbers
 
-comando→ iptables –I INPUT 1 –p icmp –s IP_HOST_B –j ACCEPT
+comando→ iptables -I INPUT 1 -p icmp -s IP_HOST_B -j ACCEPT
 
 comando→ iptables-save > iptables-rules.txt
 
-comando→ iptables –F INPUT
+comando→ iptables -F INPUT
 
-comando→ iptables –L –n –-line-numbers
+comando→ iptables -L -n --line-numbers
 
 comando→ iptables-restore < iptables-rules.txt
 
